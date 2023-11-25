@@ -1,0 +1,41 @@
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #0e1014;
+}
+
+.wrapper {
+  background-color: #0e1014;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #0e1014;
+  margin: 0 auto;
+  color: #e4e5ea;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  @extend %font-prim;
+  background-color: $color-background-page;
+  margin: 0 auto;
+  color: $color-text;
+  //   @include font($size: 1.6rem, $weight: 400, $height: 150%);
+}
