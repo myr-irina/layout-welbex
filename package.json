@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/myr-irina/layout-welbex/issues"
   },
-  "homepage": "https://github.com/myr-irina/layout-welbex#readme"
+  "homepage": "https://github.com/myr-irina/layout-welbex#readme",
+  "dependencies": {
+    "normalize-scss": "^8.0.0"
+  }
 }
