@@ -3,6 +3,7 @@
 // abstracts
 @import '../abstracts/constants';
 @import '../abstracts/placeholder';
+@import '../abstracts/mixin';
 
 // layout
 @import '../layout/wrapper';
@@ -10,6 +11,9 @@
 
 // base
 @import '../base/base';
+@import '../base/icons';
 
 // components
 @import '../components/navigation';
+@import '../components/links';
+@import '../components/socials';

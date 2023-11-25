@@ -8,5 +8,19 @@ body {
   background-color: $color-background-page;
   margin: 0 auto;
   color: $color-text;
-  //   @include font($size: 1.6rem, $weight: 400, $height: 150%);
+  @include font($size: 1.6rem, $weight: 400, $height: 150%);
+}
+
+h1 {
+  @include font($height: normal, $size: 4.8rem, $weight: 400);
+}
+
+h2 {
+  @include font($height: normal, $size: 1.8rem, $weight: 400);
+  @extend %font-add;
+}
+
+h3 {
+  @include font($height: normal, $size: 1.6rem, $weight: 400);
+  @extend %font-add;
 }
