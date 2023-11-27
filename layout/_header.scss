@@ -1,10 +1,12 @@
 .header {
   padding: 20px 0;
+  height: 73px;
 }
 
 .header__wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 9.4rem;
 }
@@ -27,4 +29,15 @@
 
 .header__navigation {
   margin: 0 145px 0 15px;
+}
+
+.purple-ball {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 850px;
+
+  filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+  backdrop-filter: blur(2px);
 }

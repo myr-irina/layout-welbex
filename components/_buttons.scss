@@ -1,0 +1,11 @@
+.main__button {
+  width: 262px;
+  height: 61px;
+  flex-shrink: 0;
+  background: #4077f3;
+
+  color: $color-text;
+  @include font($size: 1.6rem, $weight: 500);
+  cursor: pointer;
+  border: none;
+}

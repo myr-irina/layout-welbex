@@ -325,11 +325,11 @@ template {
   display: none;
 }
 
-body {
+body, .grid-col-2__text, .right-column__text-highlighted, .right-column__text {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-h3, h2 {
+.left-column__text, h3, h2, .grid-col-2__title {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
@@ -337,6 +337,7 @@ h3, h2 {
   background-color: #0e1014;
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
 }
 
 .wrapper {
@@ -346,11 +347,13 @@ h3, h2 {
 
 .header {
   padding: 20px 0;
+  height: 73px;
 }
 
 .header__wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 9.4rem;
 }
@@ -375,6 +378,75 @@ h3, h2 {
 
 .header__navigation {
   margin: 0 145px 0 15px;
+}
+
+.purple-ball {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 850px;
+  filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 61px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 330px;
+}
+
+.right-column__text {
+  align-self: flex-end;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  font-style: normal;
+  text-align: right;
+  text-align: right;
+}
+
+.right-column__text-highlighted {
+  background: var(--gradient, linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.grid-col-2__title {
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 6px;
+}
+
+.grid-col-2__text {
+  text-align: right;
+  margin: 0;
 }
 
 html {
@@ -405,6 +477,7 @@ h2 {
   line-height: normal;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 h3 {
@@ -412,6 +485,7 @@ h3 {
   line-height: normal;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 .ico {
@@ -420,14 +494,9 @@ h3 {
 }
 
 .ico_telegram {
-  -webkit-mask: url("../img/telegram.svg");
-          mask: url("../img/telegram.svg");
+  background-image: url("../img/telegram.svg");
   width: 20px;
   height: 20px;
-}
-.ico_telegram .icon:hover,
-.ico_telegram .icon:focus {
-  background: red;
 }
 
 .ico_viber {
@@ -482,11 +551,8 @@ h3 {
   list-style-type: none;
 }
 
-.col-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+.main {
+  position: relative;
 }
 
 .highlighted-text {
@@ -494,4 +560,64 @@ h3 {
   width: 247px;
   height: 58px;
   display: inline-block;
+  margin-top: 10px;
+}
+
+.red-ball {
+  width: 83px;
+  height: 83px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: absolute;
+  top: 55px;
+  left: 510px;
+}
+
+.red-ball__small {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: absolute;
+  top: 40vh;
+  left: 710px;
+}
+
+.main__wrapper {
+  margin-top: 74px;
+}
+
+.left-column__title {
+  width: 362px;
+}
+
+.left-column__text {
+  margin-top: 30px;
+  width: 275px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.right-column__text {
+  width: 291px;
+}
+
+.main__button {
+  width: 262px;
+  height: 61px;
+  flex-shrink: 0;
+  background: #4077f3;
+  color: #e4e5ea;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

@@ -4,14 +4,9 @@
 }
 
 .ico_telegram {
-  mask: url('../img/telegram.svg');
+  background-image: url('../img/telegram.svg');
   width: 20px;
   height: 20px;
-
-  .icon:hover,
-  .icon:focus {
-    background: red;
-  }
 }
 
 .ico_viber {

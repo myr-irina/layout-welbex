@@ -19,9 +19,11 @@ h1 {
 h2 {
   @include font($height: normal, $size: 1.8rem, $weight: 400);
   @extend %font-add;
+  margin: 0;
 }
 
 h3 {
   @include font($height: normal, $size: 1.6rem, $weight: 400);
   @extend %font-add;
+  margin: 0;
 }
