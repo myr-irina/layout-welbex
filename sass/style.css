@@ -680,8 +680,8 @@ h4 {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   position: absolute;
-  top: 40vh;
-  left: 710px;
+  top: 37vh;
+  right: 500px;
 }
 
 .main__wrapper {
