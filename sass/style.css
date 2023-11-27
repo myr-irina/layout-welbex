@@ -329,7 +329,7 @@ body, .grid-col-2__text, .right-column__text-highlighted, .right-column__text {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-.left-column__text, h3, h2, .grid-col-2__title {
+.left-column__text, h3, h2, .copyright__text, .link-decoration, .grid-col-2__title {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
@@ -361,6 +361,7 @@ body, .grid-col-2__text, .right-column__text-highlighted, .right-column__text {
 .header__logo {
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
 .header__logo-text {
@@ -449,6 +450,98 @@ body, .grid-col-2__text, .right-column__text-highlighted, .right-column__text {
   margin: 0;
 }
 
+.footer {
+  margin: 60px 0 20px 0;
+}
+
+.footer__contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layout-3-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 52px;
+       column-gap: 52px;
+}
+
+.footer__links {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #e4e5ea;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer__title {
+  display: inline-block;
+  color: #656566;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.footer__contents-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__links-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.footer__link-address {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  margin-top: 30px;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.link-decoration {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.copyright__text {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   font-size: 10px;
 }
@@ -485,6 +578,10 @@ h3 {
   line-height: normal;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+}
+
+h4 {
   margin: 0;
 }
 

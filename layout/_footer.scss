@@ -1,0 +1,78 @@
+.footer {
+  margin: 60px 0 20px 0;
+}
+
+.footer__contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layout-3-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 52px;
+}
+
+.footer__links {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: $color-text;
+  cursor: pointer;
+
+  @include font($size: 1.6rem, $weight: 400);
+}
+
+.footer__title {
+  display: inline-block;
+  color: $color-text-secondary;
+  @include font($size: 1.4rem, $weight: 700);
+
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.footer__contents-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__links-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.footer__link-address {
+  @include font($weight: 400, $size: 1.6rem);
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.copyright {
+  margin-top: 30px;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.link-decoration {
+  text-decoration: underline;
+  @extend %font-add;
+  @include font($size: 1.2rem, $weight: 400);
+}
+
+.copyright__text {
+  margin: 0 0 5px 0;
+  @extend %font-add;
+  @include font($size: 1.2rem, $weight: 400);
+}
