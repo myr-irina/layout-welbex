@@ -1,0 +1,13 @@
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.highlighted-text {
+  background: url(../img/with-WELBEX.svg) no-repeat;
+  width: 247px;
+  height: 58px;
+  display: inline-block;
+}

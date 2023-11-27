@@ -336,10 +336,10 @@ h3, h2 {
 .container {
   background-color: #0e1014;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .wrapper {
-  background-color: #0e1014;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -352,7 +352,29 @@ h3, h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  margin-bottom: 9.4rem;
+}
+
+.header__logo {
+  display: flex;
+  position: relative;
+}
+
+.header__logo-text {
+  display: inline-block;
+  color: #e4e5ea;
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 300;
+  font-style: normal;
+  width: 165px;
+  position: absolute;
+  left: 0;
+  top: 35px;
+}
+
+.header__navigation {
+  margin: 0 145px 0 15px;
 }
 
 html {
@@ -375,6 +397,7 @@ h1 {
   line-height: normal;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 h2 {
@@ -397,9 +420,14 @@ h3 {
 }
 
 .ico_telegram {
-  background-image: url("../img/telegram.svg");
+  -webkit-mask: url("../img/telegram.svg");
+          mask: url("../img/telegram.svg");
   width: 20px;
   height: 20px;
+}
+.ico_telegram .icon:hover,
+.ico_telegram .icon:focus {
+  background: red;
 }
 
 .ico_viber {
@@ -416,8 +444,13 @@ h3 {
 
 .navigation {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style-type: none;
+  cursor: pointer;
+}
+
+.navigation__link:hover {
+  color: white;
 }
 
 .link-tel {
@@ -427,18 +460,38 @@ h3 {
   font-style: normal;
   text-decoration: none;
   color: #e4e5ea;
+  cursor: pointer;
+}
+.link-tel:hover {
+  color: white;
 }
 
 .link_button {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .socials {
   display: flex;
-  gap: 20px;
+  gap: 27px;
   list-style-type: none;
+  margin-left: 9px;
 }
 
 .socials__item {
   list-style-type: none;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.highlighted-text {
+  background: url(../img/with-WELBEX.svg) no-repeat;
+  width: 247px;
+  height: 58px;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

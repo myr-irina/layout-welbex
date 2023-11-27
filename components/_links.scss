@@ -2,8 +2,14 @@
   @include font($size: 1.6rem, $weight: 500);
   text-decoration: none;
   color: $color-text;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .link_button {
   text-decoration: none;
+  cursor: pointer;
 }
