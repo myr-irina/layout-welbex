@@ -55,10 +55,10 @@
   @include font($weight: 400, $size: 1.6rem);
 }
 
-.footer__wrapper {
-  display: flex;
-  flex-direction: column;
+.footer__link-text {
+  text-align: right ;
 }
+
 .copyright {
   margin-top: 30px;
   align-self: flex-end;

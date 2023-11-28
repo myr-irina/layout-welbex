@@ -1,5 +1,6 @@
 html {
   font-size: 10px;
+  margin: 0 auto;
 }
 
 body {
@@ -9,6 +10,10 @@ body {
   margin: 0 auto;
   color: $color-text;
   @include font($size: 1.6rem, $weight: 400, $height: 150%);
+
+  @include media-mobile {
+    @include font($height: normal, $size: 1.4rem);
+  }
 }
 
 h1 {

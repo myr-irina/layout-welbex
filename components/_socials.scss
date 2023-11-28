@@ -3,6 +3,10 @@
   gap: 27px;
   list-style-type: none;
   margin-left: 9px;
+
+  @include media-laptop {
+    display: none;
+  }
 }
 
 .socials__item {

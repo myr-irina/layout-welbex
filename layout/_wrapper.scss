@@ -3,9 +3,33 @@
   max-width: $page-width;
   margin: 0 auto;
   position: relative;
+
+  @include media-laptop {
+    max-width: $content-width;
+  }
 }
 
 .wrapper {
   max-width: $content-width;
   margin: 0 auto;
+  width: 100%;
+
+  @include media-laptop {
+    max-width: $content-width-laptop;
+    padding: 10px;
+  }
+  @include media-tablet {
+    max-width: $content-width-tablet;
+    padding: 5px;
+  }
+
+  @include media-mobile {
+    max-width: $content-width-mobile-big;
+    padding: 5px;
+  }
+
+  @include media-mobilesmall {
+    max-width: $content-width-mobile-small;
+    padding: 5px;
+  }
 }

@@ -8,4 +8,8 @@
   @include font($size: 1.6rem, $weight: 500);
   cursor: pointer;
   border: none;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
 }

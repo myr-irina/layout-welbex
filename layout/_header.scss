@@ -4,11 +4,14 @@
 }
 
 .header__wrapper {
+  margin-bottom: 9.4rem;
+}
+
+.header__contents {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 9.4rem;
 }
 
 .header__logo {
@@ -30,6 +33,10 @@
 
 .header__navigation {
   margin: 0 145px 0 15px;
+
+  @include media-laptop {
+    margin: 0;
+  }
 }
 
 .purple-ball {
@@ -39,6 +46,16 @@
   top: 0;
   left: 850px;
 
-  filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
-  backdrop-filter: blur(2px);
+  @include media-laptop {
+    top: 100px;
+    left: 750px;
+  }
+}
+
+.header__tel {
+  display: inline-block;
+
+  @include media-laptop {
+    display: none;
+  }
 }
