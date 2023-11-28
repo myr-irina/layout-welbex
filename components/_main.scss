@@ -46,6 +46,10 @@
 
 .main__wrapper {
   margin-top: 74px;
+
+  @include media-mobilesmall {
+    margin-top: 40px;
+  }
 }
 
 .left-column__title {
@@ -54,6 +58,10 @@
 
   @include media-laptop {
     width: 200px;
+  }
+
+  @include media-mobilesmall {
+    width: 100%;
   }
 }
 
@@ -77,19 +85,17 @@
 
   @include media-laptop {
     width: 200px;
+    margin-top: 15px;
+  }
+
+  @include media-mobilesmall {
+    width: 100%;
   }
 }
 
-.right-column {
-  width: 291px;
-  @include media-laptop {
-    width: 260px;
-  }
-
-  // @include media-tablet {
-  //   width: 160px;
-  // }
-}
-
-.right-column__text {
-}
+// .right-column {
+//   width: 291px;
+//   @include media-laptop {
+//     width: 260px;
+//   }
+// }

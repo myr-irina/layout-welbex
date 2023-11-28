@@ -1,10 +1,18 @@
 .header {
   padding: 20px 0;
   height: 73px;
+
+  @include media-mobilesmall {
+    padding: 0;
+  }
 }
 
 .header__wrapper {
   margin-bottom: 9.4rem;
+
+  @include media-mobilesmall {
+    margin-bottom: 0;
+  }
 }
 
 .header__contents {
@@ -64,6 +72,7 @@
 
 .header__tel {
   display: inline-block;
+  width: 100%;
 
   @include media-laptop {
     display: none;

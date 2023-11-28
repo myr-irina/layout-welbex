@@ -3,6 +3,7 @@
   justify-content: space-between;
   list-style-type: none;
   cursor: pointer;
+  width: 100%;
 
   @include media-tablet {
     padding: 0;
