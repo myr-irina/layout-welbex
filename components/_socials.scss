@@ -7,8 +7,22 @@
   @include media-laptop {
     display: none;
   }
+
+  @include media-mobilesmall {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .socials__item {
   list-style-type: none;
+}
+
+.header__socials {
+  @include media-laptop {
+    display: none;
+  }
 }

@@ -1,5 +1,15 @@
 .footer {
   margin: 60px 0 20px 0;
+
+  @include media-mobilesmall {
+    margin: 0;
+  }
+}
+
+.footer__wrapper {
+  @include media-mobilesmall {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__contents {
@@ -7,18 +17,41 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @include media-mobilesmall {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .layout-3-column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 52px;
+  @include media-mobilesmall {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.item2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .footer__links {
   list-style-type: none;
   padding: 0;
   margin: 20px 0 0 0;
+
+  @include media-mobilesmall {
+    & > * {
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .footer__link {
@@ -28,7 +61,7 @@
 
   @include font($size: 1.6rem, $weight: 400);
   @include media-mobilesmall {
-    @include font($size: 1.4rem, $weight: 400);
+    @include font($size: 1.4rem, $weight: 400, $height: normal);
   }
 }
 
@@ -45,6 +78,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @include media-mobilesmall {
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 30px;
+  }
 }
 
 .footer__links-right {
@@ -52,6 +91,11 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 20px;
+
+  @include media-mobilesmall {
+    align-items: flex-start;
+    gap: 0;
+  }
 }
 
 .footer__link-address {
@@ -60,12 +104,24 @@
 
 .footer__link-text {
   text-align: right;
+
+  @include media-mobilesmall {
+    padding: 0;
+    margin: 0;
+    @include font($weight: 400, $size: 1.4rem);
+  }
 }
 
 .copyright {
   margin-top: 30px;
   align-self: flex-end;
   text-align: right;
+
+  @include media-mobilesmall {
+    @include font($weight: 400, $size: 1.2rem);
+    text-align: left;
+    gap: 5px;
+  }
 }
 
 .link-decoration {
