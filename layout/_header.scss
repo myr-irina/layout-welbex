@@ -18,6 +18,10 @@
   display: flex;
   position: relative;
   cursor: pointer;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .header__logo-text {
@@ -33,6 +37,7 @@
 
 .header__navigation {
   margin: 0 145px 0 15px;
+  width: 100%;
 
   @include media-laptop {
     margin: 0;
@@ -48,7 +53,12 @@
 
   @include media-laptop {
     top: 100px;
-    left: 750px;
+    left: 500px;
+  }
+
+  @include media-mobilesmall {
+    top: 250px;
+    left: 150px;
   }
 }
 

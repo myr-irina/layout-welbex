@@ -3,6 +3,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @include media-mobilesmall {
+    flex-direction: column;
+    row-gap: 15px;
+    text-align: left;
+  }
 }
 
 .grid-col-2 {
@@ -42,6 +48,21 @@
   @include font($size: 1.8rem, $weight: 700);
   letter-spacing: 0.9px;
   text-transform: uppercase;
+  text-align: right;
+}
+
+.left-column__text-highlighted {
+  background: var(
+    --gradient,
+    linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @extend %font-prim;
+  @include font($size: 4.8rem, $weight: 900);
+  letter-spacing: 0.9px;
   text-align: right;
 }
 

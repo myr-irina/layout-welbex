@@ -1,12 +1,32 @@
 .navigation {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
   list-style-type: none;
   cursor: pointer;
+
+  @include media-tablet {
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  @include media-mobilesmall {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 }
 
 .navigation__link {
+  display: block;
   &:hover {
     color: white;
+  }
+
+  @include media-mobilesmall {
+    &:last-of-type {
+      display: none;
+    }
   }
 }

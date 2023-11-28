@@ -27,6 +27,9 @@
   cursor: pointer;
 
   @include font($size: 1.6rem, $weight: 400);
+  @include media-mobilesmall {
+    @include font($size: 1.4rem, $weight: 400);
+  }
 }
 
 .footer__title {
@@ -56,7 +59,7 @@
 }
 
 .footer__link-text {
-  text-align: right ;
+  text-align: right;
 }
 
 .copyright {
