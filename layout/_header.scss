@@ -1,5 +1,5 @@
 .header {
-  padding: 20px 0;
+  padding: 20px 0 0;
   height: 73px;
 
   @include media-mobilesmall {
@@ -9,7 +9,7 @@
 }
 
 .header__wrapper {
-  margin-bottom: 9.4rem;
+  height: 73px;
 
   @include media-mobilesmall {
     margin-bottom: 0;
