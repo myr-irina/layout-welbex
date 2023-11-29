@@ -2,7 +2,6 @@
   display: flex;
   gap: 27px;
   list-style-type: none;
-  margin-left: 9px;
 
   @include media-laptop {
     display: none;
@@ -24,6 +23,7 @@
 }
 
 .header__socials {
+  padding: 0;
   @include media-laptop {
     display: none;
   }

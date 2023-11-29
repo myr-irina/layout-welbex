@@ -428,7 +428,7 @@ body, .grid-col-2__text, .left-column__text-highlighted, .right-column__text-hig
 }
 
 .header__navigation {
-  margin: 0 145px 0 15px;
+  margin: 0 133px 0 15px;
   width: 100%;
 }
 @media (max-width: 1140px) {
@@ -953,7 +953,6 @@ h4 {
   display: flex;
   gap: 27px;
   list-style-type: none;
-  margin-left: 9px;
 }
 @media (max-width: 1140px) {
   .socials {
@@ -976,6 +975,9 @@ h4 {
   height: 24px;
 }
 
+.header__socials {
+  padding: 0;
+}
 @media (max-width: 1140px) {
   .header__socials {
     display: none;
