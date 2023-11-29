@@ -24,7 +24,11 @@
     left: 350px;
   }
 
-  @include media-mobilesmall {
+  @include media-tablet {
+    left: 50px;
+  }
+
+  @include media-mobile {
     top: 450px;
     left: 20px;
     width: 43px;
@@ -59,6 +63,10 @@
 .main__wrapper {
   margin-top: 105px;
 
+  @include media-tablet {
+    margin-top: 80px;
+  }
+
   @include media-mobilesmall {
     margin-top: 40px;
   }
@@ -72,7 +80,7 @@
     width: 200px;
   }
 
-  @include media-mobilesmall {
+  @include media-tablet {
     width: 100%;
   }
 }
@@ -82,7 +90,7 @@
     width: 200px;
   }
 
-  @include media-mobilesmall {
+  @include media-tablet {
     width: 100%;
   }
 }
@@ -100,7 +108,11 @@
     margin-top: 15px;
   }
 
-  @include media-mobilesmall {
+  @include media-tablet {
+    width: 100%;
+  }
+
+  @include media-mobile {
     width: 100%;
     @include font($size: 1.8rem, $weight: 400, $height: normal);
   }

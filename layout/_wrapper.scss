@@ -29,7 +29,7 @@
     padding: 16px;
   }
 
-  @include media-mobilesmall {
+  @include media-mobile {
     max-width: $content-width-mobile-small;
     padding: 0;
   }

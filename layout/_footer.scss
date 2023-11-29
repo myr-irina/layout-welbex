@@ -1,13 +1,13 @@
 .footer {
   margin: 70px 0 20px 0;
 
-  @include media-mobilesmall {
+  @include media-mobile {
     margin: 0;
   }
 }
 
 .footer__wrapper {
-  @include media-mobilesmall {
+  @include media-mobile {
     margin: 35px 0 60px 0;
   }
 }
@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @include media-mobilesmall {
+  @include media-tablet {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -28,9 +28,16 @@
   display: grid;
   grid-template-columns: 35% 65%;
   column-gap: 20px;
-  width: 70%;
+  width: 60%;
 
-  @include media-mobilesmall {
+  @include media-tablet {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  @include media-mobile {
     display: flex;
     gap: 30px;
     width: 100%;
@@ -44,7 +51,7 @@
   justify-content: flex-start;
   column-gap: 28px;
 
-  @include media-mobilesmall {
+  @include media-tablet {
     column-gap: 20px;
   }
 }
@@ -54,7 +61,7 @@
   padding: 0;
   margin: 20px 0 0 0;
 
-  @include media-mobilesmall {
+  @include media-mobile {
     & > li:not(:last-child) {
       padding-bottom: 10px;
     }
@@ -67,7 +74,7 @@
   cursor: pointer;
 
   @include font($size: 1.6rem, $weight: 400);
-  @include media-mobilesmall {
+  @include media-mobile {
     @include font($size: 1.4rem, $weight: 400, $height: normal);
   }
 }
@@ -80,7 +87,7 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
 
-  @include media-mobilesmall {
+  @include media-mobile {
     @include font($size: 1.2rem, $weight: 700);
   }
 }
@@ -90,7 +97,7 @@
   flex-direction: column;
   align-items: flex-end;
 
-  @include media-mobilesmall {
+  @include media-tablet {
     align-items: flex-start;
     text-align: left;
     margin-top: 30px;
@@ -103,7 +110,7 @@
   align-items: flex-end;
   gap: 20px;
 
-  @include media-mobilesmall {
+  @include media-tablet {
     align-items: flex-start;
     gap: 0;
   }
@@ -117,7 +124,7 @@
   text-align: right;
   margin: 0;
 
-  @include media-mobilesmall {
+  @include media-mobile {
     padding: 0;
     margin: 0;
     @include font($weight: 400, $size: 1.4rem);
@@ -129,7 +136,7 @@
   align-self: flex-end;
   text-align: right;
 
-  @include media-mobilesmall {
+  @include media-mobile {
     @include font($weight: 400, $size: 1.2rem);
     text-align: left;
     gap: 5px;

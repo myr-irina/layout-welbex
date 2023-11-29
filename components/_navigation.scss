@@ -10,7 +10,7 @@
     justify-content: space-between;
   }
 
-  @include media-mobilesmall {
+  @include media-mobile {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -28,7 +28,7 @@
     color: white;
   }
 
-  @include media-mobilesmall {
+  @include media-mobile {
     &:last-of-type {
       display: none;
     }
