@@ -27,6 +27,18 @@
   @include media-mobilesmall {
     top: 450px;
     left: 20px;
+    width: 43px;
+    height: 43px;
+
+    fill: radial-gradient(
+      82.3% 82.3% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.54) 0%,
+      rgba(212, 93, 93, 0.26) 59.67%,
+      rgba(167, 49, 49, 0.25) 78.59%,
+      rgba(130, 25, 25, 0.25) 100%
+    );
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    backdrop-filter: blur(2px);
   }
 }
 
@@ -90,12 +102,6 @@
 
   @include media-mobilesmall {
     width: 100%;
+    @include font($size: 1.8rem, $weight: 400, $height: normal);
   }
 }
-
-// .right-column {
-//   width: 291px;
-//   @include media-laptop {
-//     width: 260px;
-//   }
-// }

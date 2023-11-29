@@ -6,6 +6,7 @@
 
   @include media-laptop {
     max-width: $content-width;
+    padding: 0 15px;
   }
 }
 
@@ -30,6 +31,6 @@
 
   @include media-mobilesmall {
     max-width: $content-width-mobile-small;
-    padding: 5px;
+    padding: 0;
   }
 }

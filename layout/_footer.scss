@@ -8,7 +8,7 @@
 
 .footer__wrapper {
   @include media-mobilesmall {
-    margin-bottom: 60px;
+    margin: 35px 0 60px 0;
   }
 }
 
@@ -40,6 +40,10 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+
+  @include media-mobilesmall {
+    column-gap: 20px;
+  }
 }
 
 .footer__links {
@@ -48,7 +52,7 @@
   margin: 20px 0 0 0;
 
   @include media-mobilesmall {
-    & > * {
+    & > li:not(:last-child) {
       padding-bottom: 10px;
     }
   }
@@ -72,6 +76,10 @@
 
   letter-spacing: 0.7px;
   text-transform: uppercase;
+
+  @include media-mobilesmall {
+    @include font($size: 1.2rem, $weight: 700);
+  }
 }
 
 .footer__contents-right {
@@ -121,6 +129,7 @@
     @include font($weight: 400, $size: 1.2rem);
     text-align: left;
     gap: 5px;
+    margin-top: 50px;
   }
 }
 
